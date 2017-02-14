@@ -1,6 +1,8 @@
-<%= form_for (@task) do |f| %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
+<%= render 'form' %>
 
-  <%= f.submit %>
-<% end %>
+<!-- <form action="/tasks" method="post">
+  <label for="content">Content: </label>
+  <input type="text" name="task[content]" id="content">
+
+  <input type="submit">
+</form> -->
