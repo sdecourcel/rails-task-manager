@@ -1,0 +1,8 @@
+<h1>Tasks#index</h1>
+<!-- <p>Find me in app/views/tasks/index.html.erb</p> -->
+
+<% @tasks.each do |task| %>
+  <% task.done ? check = '[X]' : check = '[ ]' %>
+  <p><%= check %> <%= link_to task.content, task_path(task) %></p>
+
+<% end %>
